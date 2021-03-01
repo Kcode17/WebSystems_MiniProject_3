@@ -27,31 +27,31 @@ body{
   max-height: 120px;
 }
 .card-1{
-  background-image: url(../../images/Domain_name_space.png);
+  /*background-image: url(../../images/Domain_name_space.png);*/
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
 }
 .card-2{
-  background-image: url(../../images/ip.png);
+  /*background-image: url(../../images/ip.png);*/
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
 }
 .card-3{
-  background-image: url(https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg);
+  /*background-image: url(https://www.cloudflare.com/img/learning/dns/what-is-dns/theinternet-dns.svg);*/
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
 }
 .card-4{
-  background-image: url(../../images/https.png);
+  /*background-image: url(../../images/https.png);*/
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
 }
 .card-5{
-  background-image: url(../../images/html.png);
+  /*background-image: url(../../images/html.png);*/
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
