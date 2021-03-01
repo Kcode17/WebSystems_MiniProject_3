@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>How the Internet Works</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">How the Internet Works</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right " id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+<div class="container">
+    <h2 class="display-3"></h2>
+    <p></p>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>IP Address</h3>
+            <p>An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. An IP address serves two main functions: host or network interface identification and location addressing.</p>
+            <p>Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number.[2] However, because of the growth of the Internet and the depletion of available IPv4 addresses, a new version of IP (IPv6), using 128 bits for the IP address, was standardized in 1998. IPv6 deployment has been ongoing since the mid-2000s.</p>
+            <p>An IP address serves two principal functions. It identifies the host, or more specifically its network interface, and it provides the location of the host in the network, and thus the capability of establishing a path to that host. Its role has been characterized as follows: "A name indicates what we seek. An address indicates where it is. A route indicates how to get there." The header of each IP packet contains the IP address of the sending host, and that of the destination host.</p>
+            <img style="max-width: 60%" class="img-thumbnail" src="images/IPV6-vs-IPV4.jpg">
+            <hr style="height:3px;border:none;color:#333;background-color:#333;">
+            <h3>Packets</h3>
+            <p>In networking, a packet is a small segment of a larger message. Data sent over computer networks*, such as the Internet, is divided into packets. These packets are then recombined by the computer or device that receives them.</p>
+            <p>A packet may contain any of the following components:</p>
+
+            <dl>
+                <dt>Addresses</dt>
+                    <dd>The routing of network packets requires two network addresses, the source address of the sending host, and the destination address of the receiving host.</dd>
+                <dt>Error detection and correction</dt>
+                    <dd>Error detection and correction is performed at various layers in the protocol stack. Network packets may contain a checksum, parity bits or cyclic redundancy checks to detect errors that occur during transmission.
+                        At the transmitter, the calculation is performed before the packet is sent. When received at the destination, the checksum is recalculated, and compared with the one in the packet. If discrepancies are found, the packet may be corrected or discarded. Any packet loss due to these discards is dealt with by the network protocol.
+                        In some cases modifications of the network packet may be necessary while routing, in which cases checksums are recalculated.</dd>
+                <dt>Hop limit</dt>
+                    <dd>Under fault conditions, packets can end up traversing a closed circuit. If nothing was done, eventually the number of packets circulating would build up until the network was congested to the point of failure. Time to live is a field that is decreased by one each time a packet goes through a network hop. If the field reaches zero, routing has failed, and the packet is discarded.
+                    Ethernet packets have no time-to-live field and so are subject to broadcast radiation in the presence of a switching loop.</dd>
+                <dt>Length</dt>
+                    <dd>There may be a field to identify the overall packet length. However, in some types of networks, the length is implied by the duration of the transmission.</dd>
+                <dt>Priority</dt>
+                    <dd>Some networks implement quality of service which can prioritize some types of packets above others. This field indicates which packet queue should be used; a high priority queue is emptied more quickly than lower priority queues at points in the network where congestion is occurring.</dd>
+                <dt>Payload</dt>
+                    <dd>In general, the payload is the data that is carried on behalf of an application. It is usually of variable length, up to a maximum that is set by the network protocol and sometimes the equipment on the route. When necessary, some networks can break a larger packet into smaller packets.</dd>
+            </dl>
+            <img style="max-width: 60%" class="img-thumbnail" alt="Responsive image" src="images/packets.jpg">
+            <hr style="height:3px;border:none;color:#333;background-color:#333;">
+
+            <h3>Routing</h3>
+                <p>Routing is the process of selecting a path for traffic in a network or between or across multiple networks. Broadly, routing is performed in many types of networks, including circuit-switched networks, such as the public switched telephone network (PSTN), and computer networks, such as the Internet.
+
+<br/>In packet switching networks, routing is the higher-level decision making that directs network packets from their source toward their destination through intermediate network nodes by specific packet forwarding mechanisms. Packet forwarding is the transit of network packets from one network interface to another. Intermediate nodes are typically network hardware devices such as routers, gateways, firewalls, or switches. General-purpose computers also forward packets and perform routing, although they have no specially optimized hardware for the task.</p>
+
+            <p>
+                <b>Adaptive Routing algorithm</b><br>
+                -An adaptive routing algorithm is also known as dynamic routing algorithm.<br>
+                -This algorithm makes the routing decisions based on the topology and network traffic.<br>
+                -The main parameters related to this algorithm are hop count, distance and estimated transit time.<br><br>
+                <b>Non-Adaptive Routing algorithm</b><br>
+                -Non Adaptive routing algorithm is also known as a static routing algorithm.<br>
+                -When booting up the network, the routing information stores to the routers.<br>
+                -Non Adaptive routing algorithms do not take the routing decision based on the network topology or network traffic.
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
