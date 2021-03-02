@@ -9,9 +9,23 @@
 - Feature protocols page
 - Feature DNS
 - Feature W3C, HTML and CSS
+- Feature Domain names and ICANN
 
 
 ##### Changed
+
+
+#### 01-03-2021
+
+##### Added
+- Feature IP Addresses, Packets and Routing page
+- Feature Teams page
+- Feature About page
+
+##### Changed
+- Navbar
+- Teams
+
 
 
 
